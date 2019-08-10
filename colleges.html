@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>院校专题</title>
+
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./colleges.css">
+    <script src="./jq.js"></script>
+    <!-- 这句必须得放在bootstrap.js的引用语句之前 -->
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid wrap">
+        <!-- 用户登录 -->
+        <div class="yonghudenglu">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="t1 glyphicon glyphicon-user">&nbsp;您好!请登录&nbsp;免费注册</td>
+                        <td class="t2">English</td>
+                        <td class="t3 glyphicon glyphicon-comment">&nbsp;战略合作</td>
+                        <td class="t4">
+                            <div id="t41">
+                                <img src="./素材/16.png" alt="" id="t40">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </table>
+        </div>
+        <!-- 图片 -->
+        <div class="tupian">
+            <div class="tupian1">
+                <img src="./素材/zhidian.png" id="tupian11" alt="" srcset="">
+            </div>
+            <div class="tupian2">
+                <img src="./素材/胶囊.jpg" id="tupian21" alt="">
+            </div>
+            <div class="sousuokuang">
+                <input type="text" class="SearchBox">
+                <button type="submit" class="SearchBtn glyphicon glyphicon-search" id="fa-search"></button>
+                <div class="hotword">
+                    <a href="">高薪留学去哪里</a>
+                    <a href="">高薪职业</a>
+                </div>
+            </div>
+        </div>
+        <!-- 导航 -->
+        <div class="daohang">
+            <ul class="list-inline ">
+                <li num='1'>首页</li>
+                <li num='2'>院校库</li>
+                <li num='3'>课程库</li>
+                <li num='4'>微留学</li>
+                <li num='5'>排行榜</li>
+                <li num='6'>就业薪资</li>
+                <li num='7'>国家地区</li>
+                <li num='8'>留学攻略</li>
+                <li num='9'>留学备考</li>
+                <li num='10'>留学移民</li>
+                <li num='11'>留学百科</li>
+                <li num='12'>关于我们</li>
+            </ul>
+        </div>
+        <!-- 院校 -->
+        <div class="yuanxiao">
+            <div class="left0">
+                <div class="l1">
+                    <div class="shu">
+                        <img src="./素材/shu.jpg" id="l10" alt="">
+                    </div>
+                    <div class="wenzi1">院校资讯</div>
+                    <div class="wenzi2">MORE>></div>
+                </div>
+                <div class="l2">
+                    <div class="tupianyuanxiao">
+                        <img src="./素材/bsd.jpg" id="l20" alt="" srcset="">
+                    </div>
+                    <div class="wenzi3">澳大利亚留学板块</div>
+                    <div class="wenzi4">如果你是在外地读书的龙江学子。正打果
+                        <br>是在外地读书的龙江学子......
+                        <a href="">[详情]</a>
+                    </div>
+                </div>
+                <div class="l3">
+                    <ul type="square">
+                        <li>1.会考后学习雅思，备战出国留学</li>
+                        <li>2.加拿大留学早起鸟，留学高考双保</li>
+                        <li>3.留学岁未盘点，坐享年度最大优惠！</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="right0">
+                <!-- 轮播图 -->
+                <div class="lunbotu">
+                    <ul class="tp-list">
+                        <li class="tp-item">0</li>
+                        <li class="tp-item">1</li>
+                    </ul>
+                    <ul class="point-list">
+                        <li class="point" num="0"></li>
+                        <li class="point" num="1"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- 弹出框 -->
+        <!-- <div class="tanchu"></div> -->
+        <!-- 搜索 -->
+        <div class="sousuo">
+            <div id="biaodan1">
+                <select class="form-control">
+                    <option>求学学历</option>
+                    <option>小学</option>
+                    <option>初中</option>
+                    <option>高中</option>
+                    <option>本科</option>
+                    <option>硕士</option>
+                    <option>博士</option>
+                </select>
+            </div>
+            <div id="biaodan1">
+                <select class="form-control">
+                    <option>学校性质</option>
+                    <option>民办</option>
+                    <option>公办</option>
+                </select>
+            </div>
+            <div id="biaodan1">
+                <select class="form-control">
+                    <option>留学意向国家</option>
+                    <option>中国</option>
+                    <option>美国</option>
+                    <option>俄罗斯</option>
+                    <option>巴基斯坦</option>
+                </select>
+            </div>
+            <div id="biaodan1">
+                <select class="form-control ">
+                    <option>想去的学校</option>
+                    <option>哈尔滨理工大学</option>
+                    <option>黑龙江大学</option>
+                    <option>中山大学</option>
+                    <option>哈尔滨工业大学</option>
+                </select>
+            </div>
+            <div id="weizhi">
+                <button type="button" class="btn btn-info">搜索</button>
+            </div>
+        </div>
+        <!-- 7组按钮 -->
+        <div class="anniu">
+            <div class="no1">
+                <div class="tubiao0">
+                    <div class="tubiao1">
+                        <img src="./素材/s_coin01.png" id="tubiao" alt="">
+                    </div>
+                </div>
+                <div class="wenzi5">概率测试</div>
+                <div class="wenzi6">录取机率&nbsp;测测便知</div>
+            </div>
+            <div class="no1">
+                <div class="tubiao0">
+                    <div class="tubiao1">
+                        <img src="./素材/s_coin02.png" id="tubiao" alt="">
+                    </div>
+                </div>
+                <div class="wenzi5">快捷选校</div>
+                <div class="wenzi6">量体裁衣&nbsp;分秒匹配</div>
+            </div>
+
+            <div class="no1">
+                <div class="tubiao0">
+                    <div class="tubiao1">
+                        <img src="./素材/s_coin03.png" id="tubiao" alt="">
+                    </div>
+                </div>
+                <div class="wenzi5">特色对比</div>
+                <div class="wenzi6">优势差异&nbsp;立见分晓</div>
+            </div>
+            <div class="no1">
+                <div class="tubiao0">
+                    <div class="tubiao1">
+                        <img src="./素材/s_coin05.png" id="tubiao" alt="">
+                    </div>
+                </div>
+                <div class="wenzi5">免费网申</div>
+                <div class="wenzi6">自助申请&nbsp;方便快捷</div>
+            </div>
+            <div class="no1">
+                <div class="tubiao0">
+                    <div class="tubiao1">
+                        <img src="./素材/s_coin04.png" id="tubiao" alt="">
+                    </div>
+                </div>
+                <div class="wenzi5">兴趣测试</div>
+                <div class="wenzi6">专业职位&nbsp;投你所好</div>
+            </div>
+            <div class="no1">
+                <div class="tubiao0">
+                    <div class="tubiao1">
+                        <img src="./素材/s_coin06.png" id="tubiao" alt="">
+                    </div>
+                </div>
+                <div class="wenzi5">美本定位</div>
+                <div class="wenzi6">有的放矢&nbsp;命中名校</div>
+            </div>
+            <div class="no1 no11">
+                <div class="tubiao0">
+                    <div class="tubiao1">
+                        <img src="./素材/yishu2.png" id="tubiao" alt="">
+                    </div>
+                </div>
+                <div class="wenzi5">AI竞争力</div>
+                <div class="wenzi6">特长生&nbsp;学术能力测试</div>
+            </div>
+        </div>
+        <!-- 高中院校 -->
+        <div class="gaozhongyuanxiao">
+            <div class="left0">
+                <div class="l1">
+                    <div class="gaozhongtubiao">
+                        <img src="./素材/gaozhongyuanxiao.jpg" id="l10" alt="">
+                    </div>
+                    <div class="wenzi2">MORE>></div>
+                </div>
+                <div class="l2">
+                    <div class="tupianyuanxiao">
+                        <img src="./素材/bsd.jpg" id="l20" alt="" srcset="">
+                    </div>
+                    <div class="wenzi3">澳大利亚留学板块</div>
+                    <div class="wenzi4">如果你是在外地读书的龙江学子。正打果
+                        <br>是在外地读书的龙江学子......
+                        <a href="">[详情]</a>
+                    </div>
+                </div>
+                <div class="l3">
+                    <ul type="square">
+                        <li>1.会考后学习雅思，备战出国留学</li>
+                        <li>2.加拿大留学早起鸟，留学高考双保</li>
+                        <li>3.留学岁未盘点，坐享年度最大优惠！</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="right0">
+                <div class="r1">
+                    <div class="gaozhongtubiao">
+                        <img src="./素材/gaozhongyuanxiao.jpg" id="l10" alt="">
+                    </div>
+                    <div class="wenzi2">MORE>></div>
+                </div>
+                <div class="bujuleft">
+                    <div class="row">
+                        <div class="logo">
+                            <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                        <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                        <div class="ruzhu">
+                            <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                        </div>
+                        <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                        <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                    </div>
+                    <div class="row">
+                        <div class="logo">
+                            <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                        <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                        <div class="ruzhu">
+                            <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                        </div>
+                        <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                        <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                    </div>
+                    <div class="row">
+                        <div class="logo">
+                            <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                        <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                        <div class="ruzhu">
+                            <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                        </div>
+                        <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                        <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                    </div>
+
+                </div>
+                <div class="bujuright">
+                        <div class="row">
+                                <div class="logo">
+                                    <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                <div class="ruzhu">
+                                    <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                </div>
+                                <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                            </div>
+                            <div class="row">
+                                <div class="logo">
+                                    <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                <div class="ruzhu">
+                                    <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                </div>
+                                <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                            </div>
+                            <div class="row">
+                                <div class="logo">
+                                    <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                <div class="ruzhu">
+                                    <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                </div>
+                                <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                            </div>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- 广告 -->
+        <div class="guanggao"></div>
+
+        <!-- luan -->
+        <div class="luan"></div>
+        <div class="gaozhongyuanxiao">
+                <div class="left0">
+                    <div class="l1">
+                        <div class="gaozhongtubiao">
+                            <img src="./素材/gaozhongyuanxiao.jpg" id="l10" alt="">
+                        </div>
+                        <div class="wenzi2">MORE>></div>
+                    </div>
+                    <div class="l2">
+                        <div class="tupianyuanxiao">
+                            <img src="./素材/bsd.jpg" id="l20" alt="" srcset="">
+                        </div>
+                        <div class="wenzi3">澳大利亚留学板块</div>
+                        <div class="wenzi4">如果你是在外地读书的龙江学子。正打果
+                            <br>是在外地读书的龙江学子......
+                            <a href="">[详情]</a>
+                        </div>
+                    </div>
+                    <div class="l3">
+                        <ul type="square">
+                            <li>1.会考后学习雅思，备战出国留学</li>
+                            <li>2.加拿大留学早起鸟，留学高考双保</li>
+                            <li>3.留学岁未盘点，坐享年度最大优惠！</li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="right0">
+                    <div class="r1">
+                        <div class="gaozhongtubiao">
+                            <img src="./素材/gaozhongyuanxiao.jpg" id="l10" alt="">
+                        </div>
+                        <div class="wenzi2">MORE>></div>
+                    </div>
+                    <div class="bujuleft">
+                        <div class="row">
+                            <div class="logo">
+                                <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                            <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                            <div class="ruzhu">
+                                <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                            </div>
+                            <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                            <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                        </div>
+                        <div class="row">
+                            <div class="logo">
+                                <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                            <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                            <div class="ruzhu">
+                                <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                            </div>
+                            <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                            <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                        </div>
+                        <div class="row">
+                            <div class="logo">
+                                <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                            <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                            <div class="ruzhu">
+                                <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                            </div>
+                            <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                            <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                        </div>
+    
+                    </div>
+                    <div class="bujuright">
+                            <div class="row">
+                                    <div class="logo">
+                                        <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                    <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                    <div class="ruzhu">
+                                        <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                    </div>
+                                    <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                    <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                                </div>
+                                <div class="row">
+                                    <div class="logo">
+                                        <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                    <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                    <div class="ruzhu">
+                                        <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                    </div>
+                                    <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                    <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                                </div>
+                                <div class="row">
+                                    <div class="logo">
+                                        <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                    <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                    <div class="ruzhu">
+                                        <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                    </div>
+                                    <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                    <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                                </div>
+                        
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+        <!-- 广告 -->
+        <div class="guanggao"></div>
+        <!-- luan -->
+        <div class="luan"></div>
+        <div class="gaozhongyuanxiao">
+                <div class="left0">
+                    <div class="l1">
+                        <div class="gaozhongtubiao">
+                            <img src="./素材/gaozhongyuanxiao.jpg" id="l10" alt="">
+                        </div>
+                        <div class="wenzi2">MORE>></div>
+                    </div>
+                    <div class="l2">
+                        <div class="tupianyuanxiao">
+                            <img src="./素材/bsd.jpg" id="l20" alt="" srcset="">
+                        </div>
+                        <div class="wenzi3">澳大利亚留学板块</div>
+                        <div class="wenzi4">如果你是在外地读书的龙江学子。正打果
+                            <br>是在外地读书的龙江学子......
+                            <a href="">[详情]</a>
+                        </div>
+                    </div>
+                    <div class="l3">
+                        <ul type="square">
+                            <li>1.会考后学习雅思，备战出国留学</li>
+                            <li>2.加拿大留学早起鸟，留学高考双保</li>
+                            <li>3.留学岁未盘点，坐享年度最大优惠！</li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="right0">
+                    <div class="r1">
+                        <div class="gaozhongtubiao">
+                            <img src="./素材/gaozhongyuanxiao.jpg" id="l10" alt="">
+                        </div>
+                        <div class="wenzi2">MORE>></div>
+                    </div>
+                    <div class="bujuleft">
+                        <div class="row">
+                            <div class="logo">
+                                <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                            <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                            <div class="ruzhu">
+                                <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                            </div>
+                            <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                            <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                        </div>
+                        <div class="row">
+                            <div class="logo">
+                                <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                            <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                            <div class="ruzhu">
+                                <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                            </div>
+                            <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                            <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                        </div>
+                        <div class="row">
+                            <div class="logo">
+                                <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                            <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                            <div class="ruzhu">
+                                <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                            </div>
+                            <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                            <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                        </div>
+    
+                    </div>
+                    <div class="bujuright">
+                            <div class="row">
+                                    <div class="logo">
+                                        <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                    <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                    <div class="ruzhu">
+                                        <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                    </div>
+                                    <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                    <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                                </div>
+                                <div class="row">
+                                    <div class="logo">
+                                        <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                    <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                    <div class="ruzhu">
+                                        <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                    </div>
+                                    <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                    <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                                </div>
+                                <div class="row">
+                                    <div class="logo">
+                                        <img src="./素材/logo.jpg" id="logologo" alt=""> </div>
+                                    <div class="wenzi7">阿伦达哥伦比亚中学</div>
+                                    <div class="ruzhu">
+                                        <img src="./素材/ruzhu.jpg" id="ruzhulogo" alt="">
+                                    </div>
+                                    <div class="wenzi8">Allendale&nbsp;Columbia&nbsp;School</div>
+                                    <div class="wenzi9  glyphicon glyphicon-map-marker">美国&nbsp;华盛顿州&nbsp;西雅图</div>
+                                </div>
+                        
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+
+        <!-- 帮助 -->
+        <div class="bangzhu">
+            <div class="help1">
+                <div class="biaoti">在线帮助</div>
+                <div class="biaoge">
+                    <div class="wenzileft">海外顾问</div>
+                    <div class="wenziright">留学生在线教育</div>
+                    <div class="wenzileft">在线咨询</div>
+                    <div class="wenziright">远程留学服务</div>
+                    <div class="wenzileft">校友联盟</div>
+                    <div class="wenziright">校友联盟</div>
+                </div>
+            </div>
+            <div class="help2">
+                    <div class="biaoti">在线帮助</div>
+                    <div class="biaoge">
+                        <div class="wenzileft">海外顾问</div>
+                        <div class="wenziright">留学生在线教育</div>
+                        <div class="wenzileft">在线咨询</div>
+                        <div class="wenziright">远程留学服务</div>
+                        <div class="wenzileft">校友联盟</div>
+                        <div class="wenziright">校友联盟</div>
+                    </div>
+            </div>
+            <div class="help3">
+                    <div class="biaoti">在线帮助</div>
+                    <div class="biaoge">
+                        <div class="wenzileft">海外顾问</div>
+                        <div class="wenziright">留学生在线教育</div>
+                        <div class="wenzileft">在线咨询</div>
+                        <div class="wenziright">远程留学服务</div>
+                        <div class="wenzileft">校友联盟</div>
+                        <div class="wenziright">校友联盟</div>
+                    </div>
+            </div>
+            <div class="help4">
+                    <div class="biaoti">在线帮助</div>
+                    <div class="biaoge">
+                        <div class="wenzileft">海外顾问</div>
+                        <div class="wenziright">留学生在线教育</div>
+                        <div class="wenzileft">在线咨询</div>
+                        <div class="wenziright">远程留学服务</div>
+                        <div class="wenzileft">校友联盟</div>
+                        <div class="wenziright">校友联盟</div>
+                    </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="bottom"></div>
+
+
+    </div>
+    <script src="./colleges.js"></script>
+</body>
+
+</html>
